@@ -134,8 +134,7 @@ body {
 }
 
 .img-container {
-  margin-top: 100px;
-
+  align-self: center;
   position: relative;
 }
 
@@ -150,6 +149,36 @@ body {
   top: 20px;
   animation: 1s ease slideFromLeft;
 
+}
+
+.projects-section ul {
+  display:flex;
+  align-items: center;
+  list-style: none;
+  max-width: 100%;
+}
+
+.projects-section li + li {
+  margin-left: 10px;
+}
+
+.projects-section a {
+  text-decoration: none;
+  color: #191919;
+  font-size: 1.8rem;
+}
+
+.projects-section li {
+  background-color: var(--primary-color);
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  animation: 1s ease slideFromTop;
+}
+
+.projects-section li:hover {
+  box-shadow: 10px 10px 0 0 white;
+  margin-right: 10px;
 }
 
 .links-social {
@@ -182,7 +211,11 @@ body {
   font-weight: 500;
   overflow: hidden;
   animation: 1s ease slideFromTop;
+  transition: padding 0.4s ease;
+}
 
+.links-social ul li:hover {
+  padding: 8px;
 }
 
 .links-social ul li::after {
