@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Poppins;
+}
+
+body {
+  background-color: #191919;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+::-moz-selection {
+  color: #F5F5F5;
+  background: #ffa6a6;
+}
+
+::selection {
+  color: #F5F5F5;
+  background: #ffa6a6;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 50px;
+  width: 1300px;
+  height: 100%;
+}
+
+.container .content-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 800px;
+  height: 100%;
+}
+
+.container .content-section .info-section,
+.container .content-section .skill-section,
+.container .content-section .projects-section {
+  color: #FF5F5F;
+  font-size: 3rem;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.container .content-section .info-section h1,
+.container .content-section .skill-section h1,
+.container .content-section .projects-section h1 {
+  font-size: 4.8rem;
+  color: #F5F5F5;
+  position: relative;
+}
+
+.container .content-section .info-section h1:after,
+.container .content-section .skill-section h1:after,
+.container .content-section .projects-section h1:after {
+  content: ' ';
+  width: 202px;
+  height: 20px;
+  position: absolute;
+  z-index: -1;
+  background-color: #FF5F5F;
+  left: 0;
+  bottom: 15px;
+}
+
+.container .content-section .skill-section ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 800px;
+}
+
+.container .content-section .skill-section ul li {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #F5F5F5;
+}
+
+.container .content-section .skill-section ul li .progress-bar {
+  max-width: 100%;
+  height: 12px;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+}
+
+.container .content-section .skill-section ul li .progress-bar .my-progress {
+  background-color: #FF5F5F;
+  border-radius: 8px;
+  height: 12px;
+}
+
+.container .content-section .projects-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  width: 100%;
+}
+
+.container .content-section .projects-section ul li {
+  background-color: #FF5F5F;
+  padding: 8px;
+  height: 110px;
+  width: 170px;
+  cursor: pointer;
+}
+
+.container .content-section .projects-section ul li + li {
+  margin-left: 10px;
+}
+
+.container .content-section .projects-section ul li a {
+  text-decoration: none;
+  color: #191919;
+  font-size: 1.5rem;
+}
+
+.container .content-section .links-social {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .content-section .links-social ul {
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content-section .links-social ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+.container .content-section .links-social ul li + li {
+  margin-left: 20px;
+}
+
+.container .content-section .links-social ul li::after {
+  content: ' ';
+  width: 100%;
+  height: 9px;
+  position: absolute;
+  z-index: -1;
+  background-color: #FF5F5F;
+  left: 0;
+  bottom: 3px;
+}
+
+.container .content-section .links-social ul li a {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+.container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 354px;
+  height: 650px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .container img {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    width: 100vw;
+    margin: 0;
+  }
+  .container .content-section {
+    display: block;
+    width: 80%;
+  }
+  .container .content-section .skill-section ul {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .container .content-section .projects-section ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .content-section .projects-section ul li {
+    width: 100%;
+  }
+  .container .content-section .projects-section ul li + li {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .container .content-section .links-social ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
