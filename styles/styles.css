@@ -172,6 +172,7 @@ body {
 }
 
 .container .content-section .links-social ul {
+  padding: 12px 0;
   list-style: none;
   width: 100%;
   display: -webkit-box;
@@ -253,7 +254,7 @@ body {
   }
   .container .content-section {
     display: block;
-    width: 80%;
+    width: 90%;
   }
   .container .content-section .skill-section ul {
     -ms-grid-columns: (1fr)[2];
@@ -277,6 +278,20 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-height: 740px) {
+  .container {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media (max-height: 590px) {
+  .container {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
 }
 /*# sourceMappingURL=styles.css.map */
