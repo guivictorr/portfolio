@@ -108,6 +108,7 @@ body {
         a {
           text-decoration: none;
           color: #191919;
+          background-color: $primary-color;
 
           & + a {
             margin-left: 10px;
@@ -115,7 +116,6 @@ body {
           
           li {
             font-size: 1.5rem;
-            background-color: $primary-color;
             padding: 8px;
             height: 110px;
             width: 170px;
@@ -215,12 +215,16 @@ body {
       .projects-section {
         ul {
           flex-direction: column;
-
-          li {
+          
+          a {
             width: 100%;
-            & + li {
+            & + a {
               margin: 0;
               margin-top: 10px;
+            }
+
+            li {
+              width: 100%;
             }
           }
         }
