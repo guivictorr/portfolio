@@ -105,21 +105,21 @@ body {
         list-style: none;
         width: 100%;
 
-        li {
-          background-color: $primary-color;
-          padding: 8px;
-          height: 110px;
-          width: 170px;
-          cursor: pointer;
+        a {
+          text-decoration: none;
+          color: #191919;
 
-          & + li {
+          & + a {
             margin-left: 10px;
           }
-
-          a {
-            text-decoration: none;
-            color: #191919;
+          
+          li {
             font-size: 1.5rem;
+            background-color: $primary-color;
+            padding: 8px;
+            height: 110px;
+            width: 170px;
+            cursor: pointer;
           }
         }
       }
