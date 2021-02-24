@@ -68,8 +68,20 @@ body {
   margin-top: 20px;
 }
 
-.wrapper main .introduction img {
+.wrapper main .introduction figure {
+  overflow: hidden;
+}
+
+.wrapper main .introduction figure:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.wrapper main .introduction figure img {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   width: 100%;
+  height: 100%;
 }
 
 .wrapper main .projects {
@@ -85,8 +97,14 @@ body {
           justify-content: space-between;
 }
 
+.wrapper main .projects:hover h1 {
+  letter-spacing: 10px;
+}
+
 .wrapper main .projects h1 {
   font-size: 6.4rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .wrapper main .projects .project {
@@ -104,12 +122,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-decoration: none;
 }
 
 .wrapper main .projects .project div span {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.4rem;
+  color: #F5F5F5;
 }
 
 .wrapper main .projects .project div p {
