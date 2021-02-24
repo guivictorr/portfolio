@@ -14,9 +14,24 @@ body {
   height: 100vh;
   background: #1a1a1a;
   font-family: Ubuntu, sans-serif;
+  color: #F5F5F5;
 }
 
-main {
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 65px;
+}
+
+.wrapper main {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (630px)[2];
@@ -25,10 +40,9 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 65px;
 }
 
-main .introduction {
+.wrapper main .introduction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,13 +55,12 @@ main .introduction {
           justify-content: space-between;
 }
 
-main .introduction p {
+.wrapper main .introduction p {
   font-size: 7.2rem;
-  color: #F5F5F5;
   line-height: 105.9%;
 }
 
-main .introduction p + p {
+.wrapper main .introduction p + p {
   font-size: 2.4rem;
   line-height: 126.9%;
   color: #8E8E8E;
@@ -55,11 +68,11 @@ main .introduction p + p {
   margin-top: 20px;
 }
 
-main .introduction img {
+.wrapper main .introduction img {
   width: 100%;
 }
 
-main .projects {
+.wrapper main .projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,21 +85,85 @@ main .projects {
           justify-content: space-between;
 }
 
-main .projects h1 {
+.wrapper main .projects h1 {
   font-size: 6.4rem;
-  color: #F5F5F5;
 }
 
-main .projects .project {
+.wrapper main .projects .project {
   background: #262626;
   width: 100%;
   height: 180px;
-  color: #F5F5F5;
   padding: 35px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-main .projects .project span {
+.wrapper main .projects .project div span {
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+}
+
+.wrapper main .projects .project div p {
+  color: #F5F5F5;
+  font-size: 3.6rem;
+}
+
+.wrapper main .projects .project p {
+  font-size: 1.8rem;
+  color: #8E8E8E;
+}
+
+.wrapper footer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper footer a + a {
+  margin-left: 20px;
+}
+
+@media (max-width: 1340px) {
+  .wrapper {
+    padding: 65px 65px 0 65px;
+  }
+  .wrapper main {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 910px) {
+  html {
+    font-size: 50%;
+  }
+  .wrapper main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .wrapper main .projects .project {
+    margin-top: 36px;
+  }
+  .wrapper footer {
+    min-height: 200px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
