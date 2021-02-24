@@ -7,17 +7,48 @@ $n: 4;
   }
 }
 
-
-.projects {
-  .project {
-    transform: translateY(20px);
+@keyframes slide {
+  from {
     opacity: 0;
-    animation: fade-in 300ms ease forwards;
+    transform: translateY(100px)
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.introduction {
+  p, figure {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 1000ms ease forwards;
+
 
     @for $x from 2 through $n {
       &:nth-child(#{$x}) {
-        animation-delay: 300ms * ($x - 1) / $n * $x;
+        animation-delay: 500ms * ($x - 1) / $n * $x;
       }
+    }
+  }
+}
+
+.projects {
+  h1 {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fade-in 1000ms ease forwards;
+  }
+}
+
+.project {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fade-in 600ms ease forwards;
+  @for $x from 2 through $n {
+    &:nth-child(#{$x}) {
+      animation-delay: 300ms * ($x - 1) / $n * $x;
     }
   }
 }
