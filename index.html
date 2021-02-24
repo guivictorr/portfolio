@@ -1,152 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="pt-br">
+    <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Portifólio">
-    <meta property="og:site_name" content="Guilherme Victor">
-    <meta property="og:image" content="./assets/me.jpg">
 
-    <meta name="author" content="Guilherme Victor">
-    <meta property="og:description" content="Portfólio com algumas coisas sobre meus estudos envolvendo programação">
-    <meta http-equiv="content-language" content="pt-br">
-    <meta name="robots" content="index,follow">
-    <meta name="twitter:creator" content="@ounicogui">
-    <meta name="twitter:title" content="Olá, me chamo Guilherme, sou um desenvolvedor frotend.">
-    <meta property="og:url" content="https://guilhermevictor.live">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Typescript, ReactJS, React Native, NodeJS, Git, Github, Portifólio, Programação, Desenvolvedor, Frontend, Front-end, Desenvolvedor frontend, Guilherme Victor, Guilherme, Victor, Programador Frontend, Programador, HTML, CSS">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="https://www.flaticon.com/svg/static/icons/svg/677/677721.svg"
-      type="image/x-icon"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/styles.css" />
     <title>Guilherme Victor</title>
+    <meta name="title" content="Guilherme Victor">
+    <meta name="description" content="Olá, me chamo Guilherme Victor e estudo programação a pouco mais de um ano, e hoje estou  estudando Next.js, ReactJS, React Native e  Typescript    em geral
+    e sonho em trabalhar nessa área algum dia.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://guilhermevictor.live/">
+    <meta property="og:title" content="Guilherme Victor">
+    <meta property="og:description" content="Olá, me chamo Guilherme Victor e estudo programação a pouco mais de um ano, e hoje estou  estudando Next.js, ReactJS, React Native   e    Typescript em geral
+    e sonho em trabalhar nessa área algum dia.">
+    <meta property="og:site_name" content="Guilherme Victor">
+    <meta property="og:image" content="https://i.ibb.co/St0xY8Y/me.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://guilhermevictor.live/">
+    <meta property="twitter:title" content="Guilherme Victor">
+    <meta property="twitter:description" content="Olá, me chamo Guilherme Victor e estudo programação a pouco mais de um ano, e hoje estou  estudando Next.js, ReactJS, React   Native   e Typescript em geral
+    e sonho em trabalhar nessa área algum dia.">
+    <meta property="twitter:image" content="https://i.ibb.co/St0xY8Y/me.jpg">
+
+    <meta name="keywords" content="HTML, CSS, JavaScript, Typescript, ReactJS, React Native, NodeJS, Git, Github, Portifólio, Programação, Desenvolvedor, Frontend, Front-end,  Desenvolvedor frontend, Guilherme Victor, Guilherme, Victor, Programador Frontend, Programador, HTML, CSS">
+
+    <link rel="icon" href="/assets/favicon.ico"  type="image/icon type">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/responsivity/styles.css" />
+    <link rel="stylesheet" href="styles/animations/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <main class="content-section">
-        <section class="info-section">
-          <h1>Resumo</h1>
-          <p>
-            Olá, me chamo Guilherme Victor e estou atualmente no último ano do
-            ensino médio e pretendo cursar a área de tecnologia. Comecei a
-            estudar programação no final do ano passado, hoje estou estudando
-            exclusivamente ReactJS, React Native e NodeJS em geral e sonho em
-            trabalhar nessa área algum dia.
+    <div class="wrapper">
+      <main>
+        <section class="introduction">
+          <p>Olá, me chamo<br>
+            <strong>Guilherme Victor.</strong>
           </p>
+          <p>
+            Olá, me chamo Guilherme Victor e estudo programação a pouco mais de um ano, e hoje estou estudando Next.js, ReactJS, React Native e Typescript em gerale sonho em trabalhar nessa área algum dia.
+          </p>
+          <figure>
+            <img src="./assets/me.jpg" alt="Guilherme Victor">
+          </figure>
         </section>
-        <section class="skill-section">
-          <h1>Skills</h1>
+        <section class="projects">
+          <h1  data-aos="fade-up">Projetos</h1>
           <ul>
-            <li>
-              <p>Javascript</p>
-              <div class="progress-bar">
-                <div class="my-progress" style="width: 75%"> </div>
-              </div>
+            <li class="project">
+              <a href="https://webchatapp.vercel.app" target="_blank" rel="noreferrer noopener">
+                <div>
+                  <span>
+                    Typescript
+                  </span>
+                  <p>webchat</p>
+                </div>
+                <p>Chat feito com ReactJS e Firebase</p>
+              </a>
             </li>
-            <li>
-              <p>CSS3</p>
-              <div class="progress-bar">
-                <div class="my-progress" style="width: 85%"> </div>
-              </div>
+            <li class="project">
+              <a href="https://github.com/guivictorr/games-ecommerce" target="_blank" rel="noreferrer noopener">
+                <div>
+                  <span>
+                    JavaScript
+                  </span>
+                  <p>games-ecommerce</p>
+                </div>
+                <p>Um e-commerce de games em React Native usando produtos fictícios</p>
+              </a>
             </li>
-            <li>
-              <p>HTML5</p>
-              <div class="progress-bar">
-                <div class="my-progress" style="width: 90%"> </div>
-              </div>
-            </li>
-            <li>
-              <p>ReactJS</p>
-              <div class="progress-bar">
-                <div class="my-progress" style="width: 70%"> </div>
-              </div>
-            </li>
-            <li>
-              <p>React Native</p>
-              <div class="progress-bar">
-                <div class="my-progress" style="width: 50%"> </div>
-              </div>
-            </li>
-            <li>
-              <p>Typescript</p>
-              <div class="progress-bar">
-                <div class="my-progress" style="width: 45%"> </div>
-              </div>
-            </li>
-            <li>
-              <p>NodeJS</p>
-              <div class="progress-bar">
-                <div class="my-progress" style="width: 50%"> </div>
-              </div>
-            </li>
-            <li>
-              <p>Git</p>
-              <div class="progress-bar">
-                <div class="my-progress" style="width: 70%"> </div>
-              </div>
+            <li class="project">
+              <a href="https://github.com/guivictorr/books-store" target="_blank" rel="noreferrer noopener">
+                <div>
+                  <span>
+                    Typescript
+                  </span>
+                  <p>books-store</p>
+                </div>
+                <p>Ecommerce de livros desenvolvido em React Native</p>
+              </a>
             </li>
           </ul>
         </section>
-        <section class="projects-section">
-          <h1>Projetos</h1>
-          <ul>
-            <a
-                href="https://github.com/guivictorr/weather-app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-              <li>
-                Site de previsão do tempo, totalmente responsivo feito com React
-              </li>
-            </a>
-            <a href="https://github.com/guivictorr/tasks-app" target="_blank" rel="noopener noreferrer">
-              <li>
-                CRUD com backend e frontend feito com typescript e várias outras
-                tecnologias.
-              </li>
-            </a>
-            <a
-              href="https://github.com/guivictorr/petfinder"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li>
-                Projeto para cadastrar e buscar locais de adoção de pets
-              </li>
-            </a>
-            <a
-              href="https://github.com/guivictorr/auth-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li>
-                Site com sistema de cadastro e autenticação de usuários.
-              </li>
-            </a>
-          </ul>
-        </section>
-        <footer class="links-social">
-          <ul>
-            <li>
-              <a href="https://github.com/guivictorr" target="_blank" rel="noopener noreferrer">GITHUB</a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/in/guilhermeviictor" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-            </li>
-          </ul>
-        </footer>
       </main>
-      <img src="assets/me.jpg" alt="Guilherme Victor">
+      <footer>
+        <a href="https://github.com/guivictorr" target="_blank" rel="noreferrer noopener">
+          <img src="./assets/github.svg" alt="Github">
+        </a>
+        <a href="https://linkedin.com/in/guilhermeviictor/"  target="_blank" rel="noreferrer noopener">
+          <img src="./assets/linkedin-in.svg" alt="Linkedin">
+        </a>
+      </footer>
     </div>
   </body>
 </html>
