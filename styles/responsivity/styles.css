@@ -1,0 +1,26 @@
+@media (max-width: 1340px) {
+  .wrapper {
+    padding: 65px 65px 0 65px;
+  }
+  .wrapper main {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 910px) {
+  html {
+    font-size: 50%;
+  }
+  .wrapper main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .wrapper main .projects .project {
+    margin-top: 36px;
+  }
+  .wrapper footer {
+    min-height: 200px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
