@@ -107,10 +107,32 @@ body {
   transition: all 0.4s ease;
 }
 
-.wrapper main .projects .project {
+.wrapper main .projects ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper main .projects ul .project {
   background: #262626;
   width: 100%;
   height: 180px;
+}
+
+.wrapper main .projects ul .project + .project {
+  margin-top: 35px;
+}
+
+.wrapper main .projects ul .project a {
+  height: 100%;
   padding: 35px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,19 +147,20 @@ body {
   text-decoration: none;
 }
 
-.wrapper main .projects .project div span {
+.wrapper main .projects ul .project a div span {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.4rem;
   color: #F5F5F5;
 }
 
-.wrapper main .projects .project div p {
+.wrapper main .projects ul .project a div p {
   color: #F5F5F5;
   font-size: 3.6rem;
+  margin-top: 5px;
 }
 
-.wrapper main .projects .project p {
+.wrapper main .projects ul .project a p {
   font-size: 1.8rem;
   color: #8E8E8E;
 }
